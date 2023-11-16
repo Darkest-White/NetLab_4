@@ -83,7 +83,7 @@ namespace ClassLibraryFacultative
 
         public override string ToString()
         {
-            return $"Фамилия: {LastName}\r\nИмя: {FirstName}\r\nОтчество: {MiddleName}\r\nПаспортные данные: {Adress}\r\n";
+            return $"Фамилия: {LastName}\r\nИмя: {FirstName}\r\nОтчество: {MiddleName}\r\nАдрес: {Adress}\r\n";
         }
     }
 
@@ -92,7 +92,7 @@ namespace ClassLibraryFacultative
         /// <summary>
         /// Название
         /// </summary>
-        public string Title { get; set; } = "000";
+        public string Title { get; set; } = "";
 
         /// <summary>
         /// Лекции
