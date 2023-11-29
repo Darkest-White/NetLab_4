@@ -17,17 +17,17 @@ namespace ClassLibraryFacultative
         /// <summary>
         /// Улица
         /// </summary>
-        public string Street { get; set; } = "000000";
+        public string Street { get; set; } = "";
 
         /// <summary>
         /// Дом
         /// </summary>
-        public string House { get; set; } = "00";
+        public string House { get; set; } = "";
 
         /// <summary>
         /// Квартира
         /// </summary>
-        public string Flat { get; set; } = "0";
+        public string Flat { get; set; } = "";
 
         public override string ToString()
         {
