@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace NetLab_4._2.Properties
+namespace NetLab_4.Properties
 {
 
 

@@ -1,24 +1,20 @@
-﻿using ClassLibraryFacultative;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
 using System.Windows.Forms;
+using ClassLibraryFacultatives;
+using NetLab_4;
 
-namespace NetLab_4._2
+namespace NetLab_4
 {
-    public partial class FormMenu : Form
+    public partial class FormMain : Form
     {
-        public FormMenu()
+        private Student _student;
+        private Subject _subject;
+        public FormMain()
         {
             InitializeComponent();
         }
 
-        private void addStudentToolStripMenuItem5_Click(object sender, EventArgs e)
+        private void addStudentToolStripMenuItem_Click(object sender, EventArgs e)
         {
             _student = new Student();
             FormStudent formStudent = new FormStudent(_student);
@@ -28,7 +24,7 @@ namespace NetLab_4._2
             }
         }
 
-        private void editStudentToolStripMenuItem6_Click(object sender, EventArgs e)
+        private void editStudentToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormStudent formStudent = new FormStudent(_student);
             if (formStudent.ShowDialog() == DialogResult.OK)
@@ -37,7 +33,7 @@ namespace NetLab_4._2
             }
         }
 
-        private void addSubjectToolStripMenuItem7_Click(object sender, EventArgs e)
+        private void addSubjectToolStripMenuItem_Click(object sender, EventArgs e)
         {
             _subject = new Subject();
             FormSubject formSubject = new FormSubject(_subject);
@@ -47,7 +43,7 @@ namespace NetLab_4._2
             }
         }
 
-        private void editSubjectToolStripMenuItem8_Click(object sender, EventArgs e)
+        private void editSubjectToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormSubject formSubject = new FormSubject(_subject);
             if (formSubject.ShowDialog() == DialogResult.OK)

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E65C0D61-E877-46FC-B64D-39D2567B3E53}</ProjectGuid>
+    <ProjectGuid>{50B710D5-E1F4-4838-A05C-55FC478F6F5E}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>NetLab_4._2</RootNamespace>
-    <AssemblyName>NetLab_4.2</AssemblyName>
+    <RootNamespace>NetLab_4</RootNamespace>
+    <AssemblyName>NetLab_4</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormMenu.cs">
+    <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormMenu.Designer.cs">
-      <DependentUpon>FormMenu.cs</DependentUpon>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
     <Compile Include="FormStudent.cs">
       <SubType>Form</SubType>
@@ -66,15 +66,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormMenu.resx">
-      <DependentUpon>FormMenu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormStudent.resx">
-      <DependentUpon>FormStudent.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormSubject.resx">
-      <DependentUpon>FormSubject.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -98,9 +89,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\NetLab_4.1\NetLab_4.1.csproj">
-      <Project>{6dbb814e-2e38-4f32-904d-dc0dd4c82e80}</Project>
-      <Name>NetLab_4.1</Name>
+    <ProjectReference Include="..\ClassLibraryFacultatives\ClassLibraryFacultatives.csproj">
+      <Project>{c98b90c3-8aa4-4a35-977a-75a8aeec70f7}</Project>
+      <Name>ClassLibraryFacultatives</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

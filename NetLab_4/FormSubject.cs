@@ -1,15 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using ClassLibraryFacultatives;
 using System.Windows.Forms;
-using ClassLibraryFacultative;
 
-namespace NetLab_4._2
+namespace NetLab_4
 {
     public partial class FormSubject : Form
     {
@@ -18,10 +11,10 @@ namespace NetLab_4._2
         {
             InitializeComponent();
             Subject = subject;
-            textBoxTitle.Text = Subject.Title;
+            textBoxTitle.Text = subject.Title;
             numericUpDownLectures.Value = Subject.Lectures;
             numericUpDownPractices.Value = Subject.Practices;
-            numericUpDownLaboratoryWorks.Value = Subject.LaboratoryWorks;
+            numericUpDownLaboratorys.Value = Subject.LaboratoryWorks;
         }
 
         private void buttonSave_Click(object sender, EventArgs e)
@@ -29,7 +22,7 @@ namespace NetLab_4._2
             Subject.Title = textBoxTitle.Text;
             Subject.Lectures = (int)numericUpDownLectures.Value;
             Subject.Practices = (int)numericUpDownPractices.Value;
-            Subject.LaboratoryWorks = (int)numericUpDownLaboratoryWorks.Value;
+            Subject.LaboratoryWorks = (int)numericUpDownLaboratorys.Value;
         }
     }
 }

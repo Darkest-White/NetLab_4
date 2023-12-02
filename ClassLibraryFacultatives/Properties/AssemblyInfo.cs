@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("NetLab_4.2")]
+[assembly: AssemblyTitle("ClassLibraryFacultatives")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("NetLab_4.2")]
+[assembly: AssemblyProduct("ClassLibraryFacultatives")]
 [assembly: AssemblyCopyright("Copyright ©  2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("e65c0d61-e877-46fc-b64d-39d2567b3e53")]
+[assembly: Guid("c98b90c3-8aa4-4a35-977a-75a8aeec70f7")]
 
 // Version information for an assembly consists of the following four values:
 //
